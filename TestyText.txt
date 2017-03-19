@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 Texty texters.
 The textiest texters in all the land.
 
+=======
+>>>>>>> a1cae6045bcf3b2774cc0809055e97e79033bb7d
 Texty von exters.
 
 Meat eating monkey blunderbusses.
 
+<<<<<<< HEAD
 Cheeseman.
+=======
+Cheeseman.
+>>>>>>> a1cae6045bcf3b2774cc0809055e97e79033bb7d
