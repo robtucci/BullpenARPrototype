@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/StupidCube.unity
+- path: Assets/_Scenes/Hololens Strikezone.unity
   isLoaded: 1
   isActive: 1

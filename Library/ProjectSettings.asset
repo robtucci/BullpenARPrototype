@@ -380,11 +380,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: BullPenPrototype
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\TB\Documents\GitHub\BullpenARPrototype\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 805773ff42c0d301
   metroApplicationDescription: BullPenPrototype
   wsaImages: {}
   metroTileShortName: 
