@@ -5,7 +5,7 @@ using UnityEngine;
 public class MouseClick : MonoBehaviour {
 
     public float scaleSpeed = 5;
-    private float mouseSize = .8f;
+    private float mouseSize = 1.2f;
    
     private Ray ray;
     private RaycastHit hit;
@@ -32,7 +32,8 @@ public class MouseClick : MonoBehaviour {
 
     private void MoveCursor()
     {
-        if (Input.GetMouseButtonDown(0))
+      
+        if (Input.GetMouseButton(0))
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
