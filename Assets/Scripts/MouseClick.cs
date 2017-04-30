@@ -5,7 +5,7 @@ using UnityEngine;
 public class MouseClick : MonoBehaviour {
 
     public float scaleSpeed = 5;
-    private float mouseSize = 1.2f;
+    private float mouseSize = 2.5f;
    
     private Ray ray;
     private RaycastHit hit;
@@ -44,6 +44,7 @@ public class MouseClick : MonoBehaviour {
                 {
                     this.transform.position = hit.point;
                     this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+                    CustomMessages2.Instance.SendTargetData(this.transform.position, this.transform.localScale);
                 }
                 //Debug.Log(hit.textureCoord.ToString());   //seems to be a dead end
 
@@ -63,6 +64,7 @@ public class MouseClick : MonoBehaviour {
         mouseSize += mouseChange;
 
         this.transform.localScale = new Vector3(mouseSize, mouseSize, mouseSize);
+        CustomMessages2.Instance.SendTargetData(this.transform.position, this.transform.localScale);
     }
 
 }
