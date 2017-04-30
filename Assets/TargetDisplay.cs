@@ -20,7 +20,7 @@ public class TargetDisplay : MonoBehaviour {
             return;
         }
 
-        _TargetReceiver = BodySourceManager.GetComponent<BodyDataReceiver>();
+        _TargetReceiver = TargetManager.GetComponent<TargetReceiver>();
         if (_TargetReceiver == null)
         {
             return;
