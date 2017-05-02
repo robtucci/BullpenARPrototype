@@ -97,6 +97,7 @@ public class CustomMessages2 : Singleton<CustomMessages2>
     public void SendTargetData(Vector3 targetPosition, Vector3 targetSize)
     {
         // If we are connected to a session, broadcast our info
+        Debug.Log(this.serverConnection.IsConnected());
         if (this.serverConnection != null && this.serverConnection.IsConnected())
         {
             // Create an outgoing network message to contain all the info we want to send
