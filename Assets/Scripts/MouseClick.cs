@@ -39,7 +39,7 @@ public class MouseClick : MonoBehaviour {
 
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log(hit.collider.name);
+                //Debug.Log(hit.collider.name);
                 if (hit.collider.name == "StrikeZone")   //if the object we hit is the strikeZone Object,
                 {
                     this.transform.position = hit.point;
@@ -49,8 +49,8 @@ public class MouseClick : MonoBehaviour {
                 //Debug.Log(hit.textureCoord.ToString());   //seems to be a dead end
 
 
-                Debug.Log("World Coord: (" + hit.point.x + "," + hit.point.y + "," + hit.point.z + ")");
-                Debug.Log("Local Coord: (" + transform.localPosition.x + ", " + transform.localPosition.y);
+                //Debug.Log("World Coord: (" + hit.point.x + "," + hit.point.y + "," + hit.point.z + ")");
+                //Debug.Log("Local Coord: (" + transform.localPosition.x + ", " + transform.localPosition.y);
             }
 
         }
@@ -64,7 +64,7 @@ public class MouseClick : MonoBehaviour {
         mouseSize += mouseChange;
 
         this.transform.localScale = new Vector3(mouseSize, mouseSize, mouseSize);
-        CustomMessages2.Instance.SendTargetData(this.transform.position, this.transform.localScale);
+        //CustomMessages2.Instance.SendTargetData(this.transform.position, this.transform.localScale);
     }
 
 }
