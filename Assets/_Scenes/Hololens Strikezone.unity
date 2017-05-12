@@ -269,7 +269,7 @@ Transform:
   m_GameObject: {fileID: 500255409}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 195138418}
   m_RootOrder: 2
@@ -442,7 +442,6 @@ GameObject:
   - component: {fileID: 1873355054}
   - component: {fileID: 1873355059}
   - component: {fileID: 1873355058}
-  - component: {fileID: 1873355060}
   m_Layer: 0
   m_Name: StrikeZone
   m_TagString: Untagged
@@ -543,17 +542,6 @@ MonoBehaviour:
     m_Bits: 4294967291
   Stabilizer: {fileID: 0}
   GazeTransform: {fileID: 0}
---- !u!114 &1873355060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1873355053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa48b8a3119f2b24896e22f864cf43ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1921698277
 GameObject:
   m_ObjectHideFlags: 0

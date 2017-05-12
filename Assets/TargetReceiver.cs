@@ -27,8 +27,10 @@ public class TargetReceiver : Singleton<TargetReceiver>
 
     // Called when reading in TargetData
     void UpdateTargetData(NetworkInMessage msg)
-    {
+    {   
+        
         targetPosition = CustomMessages2.Instance.ReadVector3(msg);
         targetSize = CustomMessages2.Instance.ReadVector3(msg);
+        Debug.Log(targetPosition.x);
     }
 }

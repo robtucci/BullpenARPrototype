@@ -102,7 +102,6 @@ public class CustomMessages2 : Singleton<CustomMessages2>
             // Create an outgoing network message to contain all the info we want to send
             NetworkOutMessage msg = CreateMessage((byte)TestMessageID.TargetData);
 
-            Debug.Log(targetPosition.x);
             AppendVector3(msg, targetPosition);
             AppendVector3(msg, targetSize);
 
@@ -117,7 +116,7 @@ public class CustomMessages2 : Singleton<CustomMessages2>
 
     void OnDestroy()
     {
-
+        Debug.Log("OnDestroy");
         if (this.serverConnection != null)
         {
 
@@ -131,7 +130,7 @@ public class CustomMessages2 : Singleton<CustomMessages2>
 
     void OnMessageReceived(NetworkConnection connection, NetworkInMessage msg)
     {
-
+        Debug.Log("OnMessageReceived");
         byte messageType = msg.ReadByte();
         MessageCallback messageHandler = MessageHandlers[(TestMessageID)messageType];
         if (messageHandler != null)
