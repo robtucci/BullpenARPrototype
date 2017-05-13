@@ -116,7 +116,6 @@ public class CustomMessages2 : Singleton<CustomMessages2>
 
     void OnDestroy()
     {
-        Debug.Log("OnDestroy");
         if (this.serverConnection != null)
         {
 
