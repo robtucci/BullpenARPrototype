@@ -11,7 +11,6 @@ public class MouseClick : MonoBehaviour {
     private RaycastHit hit;
 
 
-
     
 
     // Use this for initialization
@@ -23,9 +22,10 @@ public class MouseClick : MonoBehaviour {
     void Update()
     {
         if (Input.GetMouseButton(0))
-        { 
+        {
             MoveCursor();   //move the cursor based on user click
         }
+
         if (Input.GetAxis("Mouse ScrollWheel") > 0f || Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
             ScaleCursor();   //scale cursor based on use of the scrollwheel
@@ -47,7 +47,7 @@ public class MouseClick : MonoBehaviour {
                     this.transform.localScale = new Vector3(STARTING_CURSOR_SIZE,STARTING_CURSOR_SIZE,STARTING_CURSOR_SIZE);
                 }
                 this.transform.position = hit.point;
-                this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+                this.transform.rotation = Quaternion.Euler(-90, 180, 180);
                 CustomMessages2.Instance.SendTargetData(this.transform.position, this.transform.localScale);
             
             }

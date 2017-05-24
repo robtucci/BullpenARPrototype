@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Hololens Strikezone.unity
+- path: Assets/_Scenes/Coach GUI.unity
   isLoaded: 1
   isActive: 1
