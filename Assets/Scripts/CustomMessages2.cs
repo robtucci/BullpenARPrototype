@@ -94,7 +94,8 @@ public class CustomMessages2 : Singleton<CustomMessages2>
 
     // Sends target data in the form of the target's
     // Vector3 coordinates
-    public void SendTargetData(Vector3 targetPosition, Vector3 targetSize)
+    //Might need to make new function SendPitchData to make all of this more clear. For now just making it work
+    public void SendTargetData(float msgType, Vector3 position, Vector3 size)
     {
         // If we are connected to a session, broadcast our info
         if (this.serverConnection != null && this.serverConnection.IsConnected())
@@ -102,15 +103,11 @@ public class CustomMessages2 : Singleton<CustomMessages2>
             // Create an outgoing network message to contain all the info we want to send
             NetworkOutMessage msg = CreateMessage((byte)TestMessageID.TargetData);
 
-            AppendVector3(msg, targetPosition);
-            AppendVector3(msg, targetSize);
-
+            msg.Write(msgType);
+            AppendVector3(msg, position);
+            AppendVector3(msg, size);
             // Send the message as a broadcast
-            this.serverConnection.Broadcast(
-                msg,
-                MessagePriority.Immediate,
-                MessageReliability.UnreliableSequenced,
-                MessageChannel.Avatar);
+            this.serverConnection.Broadcast(msg,MessagePriority.Immediate,MessageReliability.UnreliableSequenced,MessageChannel.Avatar);
         }
     }
 
@@ -129,7 +126,6 @@ public class CustomMessages2 : Singleton<CustomMessages2>
 
     void OnMessageReceived(NetworkConnection connection, NetworkInMessage msg)
     {
-        Debug.Log("OnMessageReceived");
         byte messageType = msg.ReadByte();
         MessageCallback messageHandler = MessageHandlers[(TestMessageID)messageType];
         if (messageHandler != null)

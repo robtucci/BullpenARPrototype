@@ -215,7 +215,7 @@ Prefab:
     - target: {fileID: 114000012667812730, guid: 8aaf37823b26ee449bb3b3d7775965c3,
         type: 2}
       propertyPath: ServerAddress
-      value: 192.168.0.8
+      value: 192.168.0.13
       objectReference: {fileID: 0}
     - target: {fileID: 114000012667812730, guid: 8aaf37823b26ee449bb3b3d7775965c3,
         type: 2}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 2014917486}
   - component: {fileID: 2014917489}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Pitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -930,3 +930,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c0e8c54267f5743b5b89c42e2ce0c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  METERS_PER_FOOT: 0.3048

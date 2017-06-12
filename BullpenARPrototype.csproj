@@ -315,6 +315,7 @@
     <Compile Include="Assets\Scripts\CustomMessages2.cs" />
     <Compile Include="Assets\Scripts\MouseClick.cs" />
     <Compile Include="Assets\Scripts\Pitch.cs" />
+    <Compile Include="Assets\Scripts\ZoneProfile.cs" />
     <Compile Include="Assets\Scripts\generatePitch.cs" />
     <Compile Include="Assets\Scripts\rotateCube.cs" />
     <Compile Include="Assets\TargetDisplay.cs" />

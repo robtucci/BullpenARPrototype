@@ -48,7 +48,7 @@ public class MouseClick : MonoBehaviour {
                 }
                 this.transform.position = hit.point;
                 this.transform.rotation = Quaternion.Euler(-90, 180, 180);
-                CustomMessages2.Instance.SendTargetData(this.transform.position, this.transform.localScale);
+                CustomMessages2.Instance.SendTargetData(1.0f,this.transform.position, this.transform.localScale);
             
             }
         }
@@ -70,7 +70,7 @@ public class MouseClick : MonoBehaviour {
         cursorSize = Mathf.Max(MIN_CURSOR_SIZE, cursorSize);
 
         this.transform.localScale = new Vector3(cursorSize,cursorSize,cursorSize);
-        CustomMessages2.Instance.SendTargetData(this.transform.position, this.transform.localScale);
+        CustomMessages2.Instance.SendTargetData(1.0f,this.transform.position, this.transform.localScale);
     }
 
 }
