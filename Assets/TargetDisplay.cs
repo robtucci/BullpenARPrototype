@@ -25,7 +25,7 @@ public class TargetDisplay : MonoBehaviour {
         {
             return;
         }
-        else if (_TargetReceiver.GetMessageType() == 63 & gameObject.name == "Cursor")
+        else if (_TargetReceiver.GetMessageType() == 1.0f & gameObject.name == "Cursor")
         {
             //Debug.Log(_TargetReceiver.GetTargetSize());
             this.transform.position = _TargetReceiver.GetTargetPosition();
@@ -33,7 +33,7 @@ public class TargetDisplay : MonoBehaviour {
             //Debug.Log(this.transform.localScale);
 
         }
-        else if (_TargetReceiver.GetMessageType() == 64 & gameObject.name == "Pitch")
+        else if (_TargetReceiver.GetMessageType() == 2.0f & gameObject.name == "Pitch")
         {
             //Debug.Log(_TargetReceiver.GetTargetPosition());
             this.transform.position = _TargetReceiver.GetTargetPosition();
