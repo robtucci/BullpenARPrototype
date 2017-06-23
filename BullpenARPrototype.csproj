@@ -79,6 +79,15 @@
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\MetroHandleRef.cs" />
@@ -314,12 +323,13 @@
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\WorldAnchorManager.cs" />
     <Compile Include="Assets\Scripts\CustomMessages2.cs" />
     <Compile Include="Assets\Scripts\MouseClick.cs" />
+    <Compile Include="Assets\Scripts\OptionsController.cs" />
     <Compile Include="Assets\Scripts\Pitch.cs" />
+    <Compile Include="Assets\Scripts\TargetDisplay.cs" />
+    <Compile Include="Assets\Scripts\TargetReceiver.cs" />
     <Compile Include="Assets\Scripts\ZoneProfile.cs" />
     <Compile Include="Assets\Scripts\generatePitch.cs" />
     <Compile Include="Assets\Scripts\rotateCube.cs" />
-    <Compile Include="Assets\TargetDisplay.cs" />
-    <Compile Include="Assets\TargetReceiver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HoloToolkit\Input\Shaders\Cursor.shader" />
