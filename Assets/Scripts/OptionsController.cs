@@ -9,12 +9,18 @@ public class OptionsController : MonoBehaviour {
     public Slider RedSlider;
     public Slider GreenSlider;
     public Slider BlueSlider;
+    public Toggle OutlineToggle;
+    public Toggle GridToggle;
     public GameObject StrikeZoneObject;   //in the unity editor, link the strikezone gameObject to this script
+    public GameObject OutlineObject;  //in the unity editor, link the Outline gameObject to this script
+    public GameObject GridObject;        //in the unity editor, link the Grid gameObject to this script
     private Renderer StrikeZoneRend;    //mesh renderer for the strike zone
     private float opacity;
     private float redValue;
     private float blueValue;
     private float greenValue;
+    private bool OutlineOn;
+    private bool GridOn;
 
 	// Use this for initialization
 	void Start () {
@@ -37,7 +43,19 @@ public class OptionsController : MonoBehaviour {
             blueValue = BlueSlider.value;
 
 
-            updateColor();
+            UpdateColor();
+        }
+
+        if (OutlineToggle.isOn != OutlineOn)
+        {
+            OutlineOn = OutlineToggle.isOn;
+            UpdateOutline();
+        }
+
+        if (GridToggle.isOn != GridOn)
+        {
+            GridOn = GridToggle.isOn;
+            UpdateGrid();
         }
 
         Debug.Log(redValue);
@@ -53,7 +71,7 @@ public class OptionsController : MonoBehaviour {
         StrikeZoneRend.sharedMaterial.color = newColor;
     }
 
-    void updateColor()
+    void UpdateColor()
     {
         Color newColor = StrikeZoneRend.sharedMaterial.color;
         newColor.r = redValue;
@@ -61,5 +79,15 @@ public class OptionsController : MonoBehaviour {
         newColor.b = blueValue;
         StrikeZoneRend.sharedMaterial.color = newColor;
 
+    }
+
+    void UpdateOutline()  //Toggle the Outline of the strikezone on/off
+    {
+        OutlineObject.SetActive(OutlineOn);
+    }
+
+    void UpdateGrid()   //Toggle the Grid display on/off
+    {
+        GridObject.SetActive(GridOn);
     }
 }
