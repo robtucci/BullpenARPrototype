@@ -1699,13 +1699,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: -0.5, y: 0.5, z: -0.5}
   m_endPos: {x: -0.5, y: -0.5, z: -0.5}
-  m_lineColor: {r: 0, g: 0, b: 0, a: 0}
-  m_lineWidth: 0
-  m_lightSaberFactor: 0
+  m_lineColor: {r: 0.24524222, g: 0.9264706, b: 0.84190434, a: 1}
+  m_lineWidth: 0.07
+  m_lightSaberFactor: 0.345
 --- !u!114 &114091919105792472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1717,13 +1717,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: -0.5, y: -0.25, z: -0.5}
   m_endPos: {x: 0.5, y: -0.25, z: -0.5}
   m_lineColor: {r: 0, g: 0, b: 0, a: 0}
-  m_lineWidth: 0
-  m_lightSaberFactor: 0
+  m_lineWidth: 0.04
+  m_lightSaberFactor: 0.3
 --- !u!114 &114198604659734490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1735,13 +1735,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: -0.5, y: 0.5, z: -0.5}
   m_endPos: {x: 0.5, y: 0.5, z: -0.5}
-  m_lineColor: {r: 0, g: 0, b: 0, a: 0}
-  m_lineWidth: 0
-  m_lightSaberFactor: 0
+  m_lineColor: {r: 0.24524222, g: 0.9264706, b: 0.84190434, a: 1}
+  m_lineWidth: 0.07
+  m_lightSaberFactor: 0.345
 --- !u!114 &114285642211913760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1753,13 +1753,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: -0.5, y: -0.5, z: -0.5}
   m_endPos: {x: 0.5, y: -0.5, z: -0.5}
-  m_lineColor: {r: 0, g: 0, b: 0, a: 0}
-  m_lineWidth: 0
-  m_lightSaberFactor: 0
+  m_lineColor: {r: 0.24524222, g: 0.9264706, b: 0.84190434, a: 1}
+  m_lineWidth: 0.07
+  m_lightSaberFactor: 0.345
 --- !u!114 &114351556290233700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1771,13 +1771,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: -0.5, y: 0, z: -0.5}
   m_endPos: {x: 0.5, y: 0, z: -0.5}
   m_lineColor: {r: 0, g: 0, b: 0, a: 0}
-  m_lineWidth: 0
-  m_lightSaberFactor: 0
+  m_lineWidth: 0.04
+  m_lightSaberFactor: 0.3
 --- !u!114 &114391687213623662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1789,7 +1789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 100}
@@ -1807,7 +1807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 100}
@@ -1825,12 +1825,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0.5, y: 0.5, z: -0.5}
   m_endPos: {x: 0.5, y: -0.5, z: -0.5}
-  m_lineColor: {r: 0.44852942, g: 0.81744415, b: 1, a: 0}
-  m_lineWidth: 0.15
+  m_lineColor: {r: 0.24524222, g: 0.9264706, b: 0.84190434, a: 1}
+  m_lineWidth: 0.07
   m_lightSaberFactor: 0.345
 --- !u!114 &114452611256523296
 MonoBehaviour:
@@ -1843,13 +1843,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
-  m_startPos: {x: 0, y: 0, z: 0}
-  m_endPos: {x: 0, y: 0, z: 100}
+  m_startPos: {x: 0.167, y: 0.5, z: -0.5}
+  m_endPos: {x: 0.167, y: -0.5, z: -0.5}
   m_lineColor: {r: 0, g: 0, b: 0, a: 0}
-  m_lineWidth: 0
-  m_lightSaberFactor: 0
+  m_lineWidth: 0.04
+  m_lightSaberFactor: 0.3
 --- !u!114 &114455645027343352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1861,7 +1861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 100}
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 100}
@@ -1897,13 +1897,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: -0.5, y: 0.25, z: -0.5}
   m_endPos: {x: 0.5, y: 0.25, z: -0.5}
   m_lineColor: {r: 0, g: 0, b: 0, a: 0}
-  m_lineWidth: 0
-  m_lightSaberFactor: 0
+  m_lineWidth: 0.04
+  m_lightSaberFactor: 0.3
 --- !u!114 &114749392409897020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1915,7 +1915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 100}
@@ -1933,7 +1933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 100}
@@ -1951,13 +1951,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
-  m_startPos: {x: 0, y: 0, z: 0}
-  m_endPos: {x: 0, y: 0, z: 100}
+  m_startPos: {x: -0.167, y: 0.5, z: -0.5}
+  m_endPos: {x: -0.167, y: -0.5, z: -0.5}
   m_lineColor: {r: 0, g: 0, b: 0, a: 0}
-  m_lineWidth: 0
-  m_lightSaberFactor: 0
+  m_lineWidth: 0.04
+  m_lightSaberFactor: 0.3
 --- !u!114 &114883615464151816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1969,7 +1969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 100}
@@ -1987,7 +1987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0884dceb0d4308c4eb8bc763c8f8deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_templateMaterial: {fileID: 0}
+  m_templateMaterial: {fileID: 2100000, guid: ca6bf36e0337a0546a5a7283f71dd69f, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 0
   m_startPos: {x: 0, y: 0, z: 0}
   m_endPos: {x: 0, y: 0, z: 100}
