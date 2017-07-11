@@ -334,11 +334,12 @@
     <Compile Include="Assets\Scripts\MouseClick.cs" />
     <Compile Include="Assets\Scripts\OptionsController.cs" />
     <Compile Include="Assets\Scripts\Pitch.cs" />
+    <Compile Include="Assets\Scripts\PitchController.cs" />
     <Compile Include="Assets\Scripts\TargetDisplay.cs" />
     <Compile Include="Assets\Scripts\TargetReceiver.cs" />
     <Compile Include="Assets\Scripts\ZoneProfile.cs" />
-    <Compile Include="Assets\Scripts\generatePitch.cs" />
     <Compile Include="Assets\Scripts\rotateCube.cs" />
+    <Compile Include="Assets\Target.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HoloToolkit\Input\Shaders\Cursor.shader" />

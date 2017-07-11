@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BullpenARPrototype", "BullpenARPrototype.csproj", "{6024A0F1-5F15-B19A-72AF-A6FC7D0B5C5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BullpenARPrototype.Editor", "BullpenARPrototype.Editor.csproj", "{3AB0D8DF-1126-BC51-740F-7BFC9B62F93A}"

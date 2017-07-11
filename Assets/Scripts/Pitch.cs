@@ -43,14 +43,6 @@ public class Pitch : MonoBehaviour
     }
 
 
-    public float GetPlateX()
-    {
-        return plateX;
-    }
 
-    public float GetPlateZ()
-    {
-        return plateZ;
-    }
 
 }

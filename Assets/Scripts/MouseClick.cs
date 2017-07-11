@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class MouseClick : MonoBehaviour {
 
-	public static float SCALE_SPEED = 5f;
-	private static float STARTING_CURSOR_SIZE = 2f;
-   
-	private Ray ray;
+	public float SCALE_SPEED = .5f;
+	public float STARTING_CURSOR_SIZE = 0.07f;
+    public float MIN_CURSOR_SIZE = 0.07f;
+    public float MAX_CURSOR_SIZE = 5.0f;
+
+    private Ray ray;
 	private RaycastHit hit;
 
 
@@ -58,8 +60,7 @@ public class MouseClick : MonoBehaviour {
 
 	private void ScaleCursor()
 	{
-		float MIN_CURSOR_SIZE = 1.0f; 
-		float MAX_CURSOR_SIZE = 8.0f;
+
 		float cursorSize = this.transform.localScale.x;
 
 		float cursorChange = Input.GetAxis("Mouse ScrollWheel") * SCALE_SPEED;
@@ -69,7 +70,7 @@ public class MouseClick : MonoBehaviour {
 		cursorSize = Mathf.Min(MAX_CURSOR_SIZE, cursorSize);
 		cursorSize = Mathf.Max(MIN_CURSOR_SIZE, cursorSize);
 
-		this.transform.localScale = new Vector3(cursorSize,cursorSize,cursorSize);
+		this.transform.localScale = new Vector3(cursorSize,0.01f,cursorSize);
 		CustomMessages2.Instance.SendTargetData(1.0f,this.transform.position, this.transform.localScale);
 	}
 

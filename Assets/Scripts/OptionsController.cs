@@ -58,7 +58,6 @@ public class OptionsController : MonoBehaviour {
             UpdateGrid();
         }
 
-        Debug.Log(redValue);
 
         
 
