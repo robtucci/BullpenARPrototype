@@ -13,6 +13,7 @@ public class Target : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         _Renderer = GetComponent<Renderer>();
+        ShowIdle();  // make sure we start with the right color.
 	}
 	
 	// Update is called once per frame
