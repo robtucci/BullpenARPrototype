@@ -6,6 +6,7 @@ public class TargetDisplay : MonoBehaviour {
 
     public GameObject TargetManager;
     private TargetReceiver _TargetReceiver;
+    public Target target;
 
     // Use this for initialization
     void Start () {
@@ -25,8 +26,9 @@ public class TargetDisplay : MonoBehaviour {
         {
             return;
         }
-        else if (_TargetReceiver.GetMessageType() == 1.0f & gameObject.name == "Cursor")
+        else if (_TargetReceiver.GetMessageType() == 1.0f & gameObject.name == "Target")
         {
+            Debug.Log(1);
             //Debug.Log(_TargetReceiver.GetTargetSize());
             this.transform.position = _TargetReceiver.GetTargetPosition();
             this.transform.localScale = _TargetReceiver.GetTargetSize();
@@ -35,10 +37,29 @@ public class TargetDisplay : MonoBehaviour {
         }
         else if (_TargetReceiver.GetMessageType() == 2.0f & gameObject.name == "Pitch")
         {
-            //Debug.Log(_TargetReceiver.GetTargetPosition());
+            Debug.Log(2);
             this.transform.position = _TargetReceiver.GetTargetPosition();
             this.transform.localScale = _TargetReceiver.GetTargetSize();
         }
-
+        else if (_TargetReceiver.GetMessageType() == 3.0f)
+        {
+            Debug.Log(3);
+            target.ShowHit();
+        }
+        else if (_TargetReceiver.GetMessageType() == 4.0f)
+        {
+            Debug.Log(4);
+            target.ShowNearMiss();
+        }
+        else if (_TargetReceiver.GetMessageType() == 5.0f)
+        {
+            Debug.Log(5);
+            target.ShowMiss();
+        }
+        else if (_TargetReceiver.GetMessageType() == 6.0f)
+        {
+            Debug.Log(6);
+            target.ShowIdle();
+        }
     }
 }

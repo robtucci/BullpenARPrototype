@@ -50,7 +50,7 @@ public class PitchController : MonoBehaviour {
     {
         //get next pitch in the array
 
-        Debug.Log("Pitches Length: " + pitches.Length);
+        //Debug.Log("Pitches Length: " + pitches.Length);
 
         if (currentPitchIndex < pitches.Length-1)  //if there is still on index left to use
         {
@@ -67,10 +67,11 @@ public class PitchController : MonoBehaviour {
 
         isDisplayed = true;
 
+        CustomMessages2.Instance.SendTargetData(2.0f, currentPitchObject.transform.position, new Vector3(.01f,.08f,.08f));
         CheckOutcome();
 
         //this.transform.position = new Vector3((generatedPitch.plateX * METERS_PER_FOOT), generatedPitch.plateZ * METERS_PER_FOOT, 0f);
-        //CustomMessages2.Instance.SendTargetData(2.0f, this.transform.position, this.transform.localScale);
+        
 
     }
 
@@ -80,34 +81,37 @@ public class PitchController : MonoBehaviour {
         isDisplayed = false;
         Destroy(currentPitchObject); // need to fix this, it's super inefficient to keep instantiating and destroying, should use an object pool
 
+        CustomMessages2.Instance.SendTargetData(2.0f, new Vector3(0.0f,0.0f,0.0f), new Vector3(0.0f,0.0f,0.0f));
         target.ShowIdle();
-        
+        CustomMessages2.Instance.SendTargetData(6.0f, this.transform.position, this.transform.localScale);
 
-        //CustomMessages2.Instance.SendTargetData(2.0f, this.transform.position, this.transform.localScale);
     }
 
 
     //Determine if pitch hit the target, came close, or missed completely.
     void CheckOutcome()
     {
-        Debug.Log(Vector3.Distance(currentPitchObject.transform.position, target.transform.position));
+        //Debug.Log(Vector3.Distance(currentPitchObject.transform.position, target.transform.position));
 
-        Debug.Log("Local scale.x: " + target.transform.localScale.x);
+        //Debug.Log("Local scale.x: " + target.transform.localScale.x);
 
         if (Vector3.Distance(currentPitchObject.transform.position, target.transform.position) < ((target.transform.localScale.x/2) + 0.035f))   //need to combine the radius of the ball and the radius of the target for the max allowed distance
         {
-            Debug.Log("Hit.");
+            //Debug.Log("Hit.");
             target.ShowHit();
+            CustomMessages2.Instance.SendTargetData(3.0f, this.transform.position, this.transform.localScale);
         }
         else if (Vector3.Distance(currentPitchObject.transform.position, target.transform.position) < ((target.transform.localScale.x) + 0.035f))
         {
-            Debug.Log("Near miss.");
+            //Debug.Log("Near miss.");
             target.ShowNearMiss();
+            CustomMessages2.Instance.SendTargetData(4.0f, this.transform.position, this.transform.localScale);
         }
         else
         {
-            Debug.Log("Miss.");
+            //Debug.Log("Miss.");
             target.ShowMiss();
+            CustomMessages2.Instance.SendTargetData(5.0f, this.transform.position, this.transform.localScale);
         }
     }
 }
