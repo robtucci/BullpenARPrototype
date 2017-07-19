@@ -64,6 +64,7 @@ public class PitchController : MonoBehaviour {
 
         currentPitch = pitches[currentPitchIndex];
         currentPitchObject = Instantiate(pitchPrefab, new Vector3(currentPitch.plateX * METERS_PER_FOOT, currentPitch.plateZ * METERS_PER_FOOT, -0.11f), Quaternion.identity, parent);
+        currentPitchObject.layer = 2;
 
         isDisplayed = true;
 
