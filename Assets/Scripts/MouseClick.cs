@@ -48,7 +48,7 @@ public class MouseClick : MonoBehaviour {
 				{
 					this.transform.localScale = new Vector3(STARTING_CURSOR_SIZE,STARTING_CURSOR_SIZE,STARTING_CURSOR_SIZE);
 				}
-				this.transform.position = new Vector3(hit.point.x, hit.point.y, -0.07f);   //take the x,y from the ray hit, but not the z (to prevent it intersecting the gridlines
+				this.transform.position = new Vector3(hit.point.x, hit.point.y, -0.1f);   //take the x,y from the ray hit, but not the z (to prevent it intersecting the gridlines
 				this.transform.rotation = Quaternion.Euler(-90, 180, 180);
 				CustomMessages2.Instance.SendTargetData(1.0f,this.transform.position, this.transform.localScale);
 			
