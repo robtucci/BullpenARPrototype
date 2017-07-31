@@ -50,7 +50,7 @@ public class MouseClick : MonoBehaviour {
 				}
 				this.transform.position = new Vector3(hit.point.x, hit.point.y, -0.1f);   //take the x,y from the ray hit, but not the z (to prevent it intersecting the gridlines
 				this.transform.rotation = Quaternion.Euler(-90, 180, 180);
-				CustomMessages2.Instance.SendTargetData(1.0f,this.transform.position, this.transform.localScale);
+				CustomMessages2.Instance.SendHololensData(1.0f,this.transform.position, this.transform.localScale,new Vector3(0.0f,0.0f,0.0f), new Vector3(0.0f, 0.0f, 0.0f));
 			
 			}
 		}
@@ -71,7 +71,7 @@ public class MouseClick : MonoBehaviour {
 		cursorSize = Mathf.Max(MIN_CURSOR_SIZE, cursorSize);
 
 		this.transform.localScale = new Vector3(cursorSize,0.01f,cursorSize);
-		CustomMessages2.Instance.SendTargetData(1.0f,this.transform.position, this.transform.localScale);
+		CustomMessages2.Instance.SendHololensData(1.0f,this.transform.position, this.transform.localScale, new Vector3(0.0f, 0.0f, 0.0f), new Vector3(0.0f, 0.0f, 0.0f));
 	}
 
 }

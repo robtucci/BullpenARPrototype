@@ -95,7 +95,7 @@ public class CustomMessages2 : Singleton<CustomMessages2>
     // Sends target data in the form of the target's
     // Vector3 coordinates
     //Might need to make new function SendPitchData to make all of this more clear. For now just making it work
-    public void SendTargetData(float msgType, Vector3 position, Vector3 size)
+    public void SendHololensData(float targetColor, Vector3 targetPosition, Vector3 targetSize, Vector3 pitchPosition, Vector3 pitchSize)
     {
         // If we are connected to a session, broadcast our info
         if (this.serverConnection != null && this.serverConnection.IsConnected())
@@ -103,9 +103,11 @@ public class CustomMessages2 : Singleton<CustomMessages2>
             // Create an outgoing network message to contain all the info we want to send
             NetworkOutMessage msg = CreateMessage((byte)TestMessageID.TargetData);
 
-            msg.Write(msgType);
-            AppendVector3(msg, position);
-            AppendVector3(msg, size);
+            msg.Write(targetColor);
+            AppendVector3(msg, targetPosition);
+            AppendVector3(msg, targetSize);
+            AppendVector3(msg, pitchPosition);
+            AppendVector3(msg, pitchSize);
             // Send the message as a broadcast
             this.serverConnection.Broadcast(msg,MessagePriority.Immediate,MessageReliability.UnreliableSequenced,MessageChannel.Avatar);
         }

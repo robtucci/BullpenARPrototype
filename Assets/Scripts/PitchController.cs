@@ -68,12 +68,7 @@ public class PitchController : MonoBehaviour {
 
         isDisplayed = true;
 
-        CustomMessages2.Instance.SendTargetData(2.0f, currentPitchObject.transform.position, new Vector3(.01f,.08f,.08f));
         CheckOutcome();
-
-        //this.transform.position = new Vector3((generatedPitch.plateX * METERS_PER_FOOT), generatedPitch.plateZ * METERS_PER_FOOT, 0f);
-        
-
     }
 
     void RemovePitch()
@@ -82,9 +77,9 @@ public class PitchController : MonoBehaviour {
         isDisplayed = false;
         Destroy(currentPitchObject); // need to fix this, it's super inefficient to keep instantiating and destroying, should use an object pool
 
-        CustomMessages2.Instance.SendTargetData(2.0f, new Vector3(0.0f,0.0f,0.0f), new Vector3(0.0f,0.0f,0.0f));
+        
         target.ShowIdle();
-        CustomMessages2.Instance.SendTargetData(6.0f, this.transform.position, this.transform.localScale);
+        CustomMessages2.Instance.SendHololensData(1.0f, target.transform.position, target.transform.localScale, new Vector3(0.0f, 0.0f, 0.0f), new Vector3(0.0f, 0.0f, 0.0f));
 
     }
 
@@ -100,19 +95,19 @@ public class PitchController : MonoBehaviour {
         {
             //Debug.Log("Hit.");
             target.ShowHit();
-            CustomMessages2.Instance.SendTargetData(3.0f, this.transform.position, this.transform.localScale);
+            CustomMessages2.Instance.SendHololensData(2.0f, target.transform.position, target.transform.localScale, currentPitchObject.transform.position, new Vector3(.01f, .08f, .08f));
         }
         else if (Vector3.Distance(currentPitchObject.transform.position, target.transform.position) < ((target.transform.localScale.x) + 0.035f))
         {
             //Debug.Log("Near miss.");
             target.ShowNearMiss();
-            CustomMessages2.Instance.SendTargetData(4.0f, this.transform.position, this.transform.localScale);
+            CustomMessages2.Instance.SendHololensData(3.0f, target.transform.position, target.transform.localScale, currentPitchObject.transform.position, new Vector3(.01f, .08f, .08f));
         }
         else
         {
             //Debug.Log("Miss.");
             target.ShowMiss();
-            CustomMessages2.Instance.SendTargetData(5.0f, this.transform.position, this.transform.localScale);
+            CustomMessages2.Instance.SendHololensData(4.0f, target.transform.position, target.transform.localScale, currentPitchObject.transform.position, new Vector3(.01f, .08f, .08f));
         }
     }
 }

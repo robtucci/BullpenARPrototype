@@ -6,13 +6,15 @@ using UnityEngine;
 // Receives the body data messages
 public class TargetReceiver : Singleton<TargetReceiver>
 {
-    private float messageType;
+    private float targetColor;
     private Vector3 targetPosition = new Vector3();
     private Vector3 targetSize = new Vector3();
+    private Vector3 pitchPosition = new Vector3();
+    private Vector3 pitchSize = new Vector3();
 
-    public float GetMessageType()
+    public float GetTargetColor()
     {
-        return messageType;
+        return targetColor;
     }
 
     public Vector3 GetTargetPosition()
@@ -25,20 +27,30 @@ public class TargetReceiver : Singleton<TargetReceiver>
         return targetSize;
     }
 
+    public Vector3 GetPitchPosition()
+    {
+        return pitchPosition;
+    }
+
+    public Vector3 GetPitchSize()
+    {
+        return pitchSize;
+    }
+
     void Start()
     {
         CustomMessages2.Instance.MessageHandlers[CustomMessages2.TestMessageID.TargetData] =
-            this.UpdateTargetData;
+            this.UpdateHololensData;
     }
 
     // Called when reading in TargetData
-    void UpdateTargetData(NetworkInMessage msg)
+    void UpdateHololensData(NetworkInMessage msg)
     {
-        messageType = msg.ReadFloat();
-        Debug.Log(messageType);
+        targetColor = msg.ReadFloat();
         targetPosition = CustomMessages2.Instance.ReadVector3(msg);
-        Debug.Log(targetPosition);
         targetSize = CustomMessages2.Instance.ReadVector3(msg);
-        Debug.Log(targetSize);
+        pitchPosition = CustomMessages2.Instance.ReadVector3(msg);
+        pitchSize = CustomMessages2.Instance.ReadVector3(msg);
+
     }
 }

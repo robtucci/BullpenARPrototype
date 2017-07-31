@@ -26,40 +26,33 @@ public class TargetDisplay : MonoBehaviour {
         {
             return;
         }
-        else if (_TargetReceiver.GetMessageType() == 1.0f & gameObject.name == "Target")
-        {
-            Debug.Log(1);
-            //Debug.Log(_TargetReceiver.GetTargetSize());
-            this.transform.position = _TargetReceiver.GetTargetPosition();
-            this.transform.localScale = _TargetReceiver.GetTargetSize();
-            //Debug.Log(this.transform.localScale);
 
-        }
-        else if (_TargetReceiver.GetMessageType() == 2.0f & gameObject.name == "Pitch")
+        if (gameObject.name == "Target")
         {
-            Debug.Log(2);
             this.transform.position = _TargetReceiver.GetTargetPosition();
             this.transform.localScale = _TargetReceiver.GetTargetSize();
         }
-        else if (_TargetReceiver.GetMessageType() == 3.0f)
+        else if (gameObject.name == "Pitch")
         {
-            Debug.Log(3);
+            this.transform.position = _TargetReceiver.GetPitchPosition();
+            this.transform.localScale = _TargetReceiver.GetPitchSize();
+        }
+
+        if (_TargetReceiver.GetTargetColor() == 1.0f)
+        {
+            target.ShowIdle();
+        }
+        else if (_TargetReceiver.GetTargetColor() == 2.0f)
+        {
             target.ShowHit();
         }
-        else if (_TargetReceiver.GetMessageType() == 4.0f)
+        else if (_TargetReceiver.GetTargetColor() == 3.0f)
         {
-            Debug.Log(4);
             target.ShowNearMiss();
         }
-        else if (_TargetReceiver.GetMessageType() == 5.0f)
+        else if (_TargetReceiver.GetTargetColor() == 4.0f)
         {
-            Debug.Log(5);
             target.ShowMiss();
-        }
-        else if (_TargetReceiver.GetMessageType() == 6.0f)
-        {
-            Debug.Log(6);
-            target.ShowIdle();
         }
     }
 }
