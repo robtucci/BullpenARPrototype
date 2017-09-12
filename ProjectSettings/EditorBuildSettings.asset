@@ -7,3 +7,4 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_Scenes/Hololens Strikezone.unity
+    guid: b1e03be0d8efa9a4fbb875fe30958c98
