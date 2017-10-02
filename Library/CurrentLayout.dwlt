@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 119
+  controlID: 47
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 23
+  controlID: 48
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,19 +368,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/HoloToolkit/Input/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/HoloToolkit/Input/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: F:\BullPen\Repo-2017.1.1\BullpenARPrototype-2017.1.1
+  m_LastProjectPath: F:\BullPen\Repo-2017.1.1\BullpenARPrototype
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 20330000
-    m_LastClickedID: 13088
-    m_ExpandedIDs: 00000000822a0000a43100003e33000000ca9a3bffffff7f
+    m_SelectedIDs: 02340000
+    m_LastClickedID: 13314
+    m_ExpandedIDs: 0000000002340000aa3a0000323c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -408,7 +408,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000822a0000
+    m_ExpandedIDs: 0000000002340000aa3a0000323c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -524,23 +524,23 @@ MonoBehaviour:
     height: 844
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: dc3d0000
-    m_LastClickedID: 15836
-    m_ExpandedIDs: 7258ffff5259ffff225cffff4aceffff72fbffff74fbffff18fcffff00000000403d0000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 8e7fffff8880ffff5083ffffa2adffff9caeffff64b1ffff46eeffff00000000123e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: homeplate
-      m_OriginalName: homeplate
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 16080
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -576,14 +576,14 @@ MonoBehaviour:
     width: 1708
     height: 844
   m_SceneLighting: 1
-  lastFramingTime: 41708.5103543353
+  lastFramingTime: 120.22525306203788
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: -0.46557927, z: 3.499}
+    m_Target: {x: 0.043352127, y: 0.9466866, z: -0.08737224}
     speed: 2
-    m_Value: {x: 0, y: -0.46557927, z: 3.499}
+    m_Value: {x: 0.043352127, y: 0.9466866, z: -0.08737224}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -606,13 +606,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.2190248, y: 0.4042369, z: -0.10034267, w: -0.882356}
+    m_Target: {x: -0.111268654, y: 0.6269373, z: -0.09110635, w: -0.7656818}
     speed: 2
-    m_Value: {x: -0.2190248, y: 0.4042369, z: -0.10034267, w: -0.882356}
+    m_Value: {x: -0.111268654, y: 0.6269373, z: -0.09110635, w: -0.7656818}
   m_Size:
-    m_Target: 2.2272947
+    m_Target: 5.0208297
     speed: 2
-    m_Value: 2.2272947
+    m_Value: 5.0208297
   m_Ortho:
     m_Target: 0
     speed: 2
